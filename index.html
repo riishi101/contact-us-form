@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Form || Frontend Mentor</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h1>Contact Us</h1>
+
+        <div class="name_container">
+          <div class="form-control">
+            <label for="fname">First Name<span> *</span></label>
+            <input type="text" id="firstName" name="fname" />
+            <small>This field is required</small>
+          </div>
+
+          <div class="form-control">
+            <label for="lname">Last Name <span>*</span></label>
+            <input type="text" id="lastName" name="lname" />
+            <small>This field is required</small>
+          </div>
+        </div>
+
+        <div class="form-control">
+          <label for="email">Email Address <span>*</span></label>
+          <input type="text" id="email" />
+          <small>Please enter a valid email address</small>
+        </div>
+
+        <div class="form_control query">
+          <label for="query">Query type <span>*</span></label>
+          <div class="query_options">
+            <div class="query-control">
+              <input
+                type="radio"
+                id="generalEnquiry"
+                name="queryType"
+                value="generalEnquiry"
+              />
+              <label class="general" for="generalEnquiry"
+                >General Enquiry</label
+              >
+            </div>
+            <div class="query-control">
+              <input
+                type="radio"
+                id="supportRequest"
+                name="queryType"
+                value="supportRequest"
+              />
+              <label for="supportRequest">Support Request</label>
+            </div>
+          </div>
+          <small>Please select a query type</small>
+        </div>
+
+        <div class="form-control message">
+          <label for="message">Message <span> *</span></label>
+          <textarea id="message" rows="4"></textarea>
+          <small>This field is required</small>
+        </div>
+
+        <div class="checkbox-container">
+          <input type="checkbox" id="consent" name="consent" value="yes" />
+          <label for="consent"
+            >I consent to being contacted by the team <span>*</span></label
+          >
+          <small>To submit this form, please consent to being contacted</small>
+        </div>
+
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+    <!-- Submit Message Sent! Thanks for completing the form. We'll be in 
+    touch soon! -->
+
+    <script src="script.js"></script>
+  </body>
+</html>
